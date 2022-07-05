@@ -7,7 +7,7 @@ class Owner(models.Model):
     age = models.IntegerField(null=True)
 
     class Meta:
-        db_table: 'owners'
+        db_table= 'owners'
 
 
 class Dog(models.Model):
@@ -16,4 +16,4 @@ class Dog(models.Model):
     owner = models.ForeignKey('Owner', on_delete=models.CASCADE)
 
     class Meta:
-        db_table: 'dogs'
+        db_table= 'dogs'
